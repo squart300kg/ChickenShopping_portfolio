@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cart">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="장바구니"
+            android:textSize="30dp"
+            android:background="#FF8200"
+            android:textColor="#F4FFFF"
+            android:textAlignment="center"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView_cart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFF">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id = "@+id/cart_total_price"
+                android:textColor="#FF8200"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "상품금액 : 10000원"/>
+            <TextView
+                android:id = "@+id/delivery_charge"
+                android:textColor="#FF8200"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "배송비  0원"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000"/>
+            <TextView
+                android:id = "@+id/last_price"
+                android:textColor="#FF8200"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "총 주문금액  1,500,000원"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop = "50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:id = "@+id/soldOut"
+                android:visibility="gone"
+                android:onClick = "goToBuy"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:background="#FF8200"
+                android:text="품절"/>
+            <Button
+                android:id = "@+id/goToBuy"
+                android:visibility="visible"
+                android:onClick = "goToBuy"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:background="#FF8200"
+                android:text="상품 주문하기"/>
+            <Button
+                android:onClick = "goToShopping"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="20dp"
+                android:text="쇼핑 계속하기"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

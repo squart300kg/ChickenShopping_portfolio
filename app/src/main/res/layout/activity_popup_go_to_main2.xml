@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Popup_goToMain2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id = "@+id/titleTV"
+            android:text = "회원 정보 변경"
+            android:textSize = "20sp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:background="#FF8200"
+            android:layout_width="match_parent"
+            android:layout_height="53sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation = "vertical"
+        android:padding = "24dp">
+        <TextView
+            android:id = "@+id/idSearchText"
+            android:textSize = "15sp"
+            android:textColor = "#000"
+            android:text = "정말 변경하시겠습니까?"
+            android:gravity = "center"
+            android:layout_marginBottom = "3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id = "@+id/txtText2"
+            android:textSize = "15sp"
+            android:textColor = "#000"
+            android:gravity = "center"
+            android:layout_marginBottom = "3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity = "center"
+        android:orientation="horizontal">
+        <Button
+            android:id = "@+id/noChange"
+            android:text = "취소"
+            android:textSize = "20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick = "noChange"/>
+        <Button
+            android:id = "@+id/ok"
+            android:text = "확인"
+            android:textSize = "20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick = "goToChange"/>
+    </LinearLayout>
+</LinearLayout>

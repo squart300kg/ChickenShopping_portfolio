@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:onClick="goToBallList2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:textSize="20dp"
+                android:background="#FF8200"
+                android:textColor="#F4FFFF"
+                android:text = "볼닭가슴살"/>
+
+            <TextView
+                android:onClick="goToSteamList2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:textSize="20dp"
+                android:textColor="#FF8200"
+                android:text="스팀볼닭가슴살" />
+
+            <TextView
+                android:onClick="goToRawList2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:textSize="20dp"
+                android:background="#FF8200"
+                android:textColor="#F4FFFF"
+                android:text = "생닭가슴살"/>
+
+            <TextView
+                android:onClick="goTohunjeList2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:textSize="20dp"
+                android:textColor="#FF8200"
+                android:text="훈제닭가슴살" />
+
+            <TextView
+                android:onClick="goToYukpoList2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:textSize="20dp"
+                android:background="#FF8200"
+                android:textColor="#F4FFFF"
+                android:text = "육포볼닭가슴살"/>
+            <TextView
+                android:onClick="goToStakeList2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:textSize="20dp"
+                android:textColor="#FF8200"
+                android:text = "스테이크볼닭가슴살"/>
+            <TextView
+                android:onClick="goToSosiziList2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:textSize="20dp"
+                android:background="#FF8200"
+                android:textColor="#F4FFFF"
+                android:text = "소시지볼닭가슴살"/>
+            <TextView
+                android:onClick="goToSliceList2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="#FF8200"
+                android:text = "슬라이스닭가슴살"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id = "@+id/categoryname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "소시지 닭가슴살"
+        android:textSize = "40dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#dddddd"
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".Race">
+
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_gravity="bottom"
+        android:id = "@+id/yellow_runner"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:orientation="vertical">
+        <TextView
+            android:visibility="gone"
+            android:id = "@+id/yellow_grade"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "1등"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src = "@drawable/run2"/>
+        <TextView
+            android:id = "@+id/yellow_text"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:text="(나)"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id = "@+id/black_runner"
+        android:layout_margin="20dp"
+        android:layout_gravity="bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:orientation="vertical">
+        <TextView
+            android:visibility="gone"
+            android:id = "@+id/black_grade"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "1등"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src = "@drawable/run3"/>
+        <TextView
+            android:id = "@+id/black_text"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:text="(나)"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id = "@+id/peanut_runner"
+        android:layout_margin="20dp"
+        android:layout_gravity="bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:orientation="vertical">
+        <TextView
+            android:visibility="gone"
+            android:id = "@+id/peanut_grade"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "1등"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src = "@drawable/run1"/>
+        <TextView
+            android:id = "@+id/peanut_text"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:text="(나)"/>
+    </LinearLayout>
+
+</LinearLayout>

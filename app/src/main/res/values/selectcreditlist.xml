@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="selectcreditlist">
+        <item>신한카드</item>
+        <item>삼성카드</item>
+        <item>비씨카드</item>
+        <item>그냥카드</item>
+        <item>팀노바카드</item>
+        <item>헬스카드</item>
+        <item>스쿼트카드</item>
+        <item>아무개카드</item>
+        <item>신한카트</item>
+    </string-array>
+</resources>

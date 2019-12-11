@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- android test 돌릴 때 화면 lock 풀어야 로그인 touch 가능 -->
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo1"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Popup_Naver_Login"
+            android:screenOrientation="portrait"
+            android:theme="@style/popupTheme"
+            />
+        <activity
+            android:name=".Popup_goToMain2"
+            android:screenOrientation="portrait"
+            android:theme="@style/popupTheme" />
+        <activity
+            android:name=".Popup_goToMain"
+            android:screenOrientation="portrait"
+            android:theme="@style/popupTheme" />
+        <activity android:name=".ChangeUserInfo" />
+        <activity android:name=".SearchPassword" />
+        <activity android:name=".PayComplete" />
+        <activity android:name=".PayAccount_API" />
+        <activity android:name=".PayPhone_API" />
+        <activity android:name=".PayCredit_API" />
+        <activity
+            android:name=".Popup_Game_End"
+            android:screenOrientation="portrait"
+            android:theme="@style/popupTheme" />
+        <activity android:name=".Race" />
+        <activity android:name=".MainActivity_Game" />
+        <activity android:name=".Authentication_Number" />
+        <activity
+            android:name=".Popup_Request_Login"
+            android:screenOrientation="portrait"
+            android:theme="@style/popupTheme" />
+        <activity android:name=".Manage_Delivery_See" />
+        <activity android:name=".Manage_Review" />
+        <activity android:name=".Manage_Delivery" />
+        <activity android:name=".Admin" />
+        <activity android:name=".ReviewUpdate" />
+        <activity
+            android:name=".Popup_ReviewDelete"
+            android:screenOrientation="portrait"
+            android:theme="@style/popupTheme" />
+        <activity android:name=".ReviewSee" />
+        <activity android:name=".ReviewList" />
+        <activity android:name=".ReviewWrite" />
+        <activity android:name=".Board" />
+        <activity android:name=".Update" />
+        <activity
+            android:name=".Popup_IdSearch"
+            android:screenOrientation="portrait"
+            android:theme="@style/popupTheme" />
+        <activity
+            android:name=".Popup_PayCredit"
+            android:screenOrientation="portrait"
+            android:theme="@style/popupTheme" />
+        <activity android:name=".MyPage" />
+        <activity
+            android:name=".Popup"
+            android:screenOrientation="portrait"
+            android:theme="@style/popupTheme" />
+        <activity android:name=".SearchIdPassword" />
+        <activity android:name=".Cart" />
+        <activity android:name=".UserInsertStep" />
+        <activity android:name=".UserInsert" />
+        <activity android:name=".Login" />
+        <activity android:name=".PayAccount" />
+        <activity android:name=".PayPhone" />
+        <activity android:name=".PayCredit" />
+        <activity android:name=".BuyStep_1" />
+        <activity android:name=".Buy" />
+        <activity android:name=".BuySosizi_1" />
+        <activity android:name=".Category" />
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" />
+    </application>
+
+</manifest>

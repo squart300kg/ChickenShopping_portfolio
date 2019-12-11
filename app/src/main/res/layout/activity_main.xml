@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id = "@+id/logo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="101dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/logo3" />
+
+                <ImageView
+                    android:layout_width="79dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/logo1" />
+
+                <ImageView
+                    android:onClick = "cart"
+                    android:layout_marginLeft="130dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/cart" />
+
+                <ImageView
+                    android:onClick = "my"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/my"  />
+            </LinearLayout>
+            <LinearLayout
+                android:id = "@+id/hello"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation= "horizontal">
+                <TextView
+                    android:id = "@+id/login_on"
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hello"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:onClick="goToAllList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FF8200"
+                    android:textSize="15dp"
+                    android:text="전체 품목 보기 | " />
+
+                <TextView
+                    android:onClick="game"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FF8200"
+                    android:textSize="15dp"
+                    android:text="포인트 게임 | " />
+
+                <TextView
+                    android:onClick="board"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FF8200"
+                    android:textSize="15dp"
+                    android:text="구매 후기 " />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id = "@+id/main_banner"
+                    android:layout_width="400dp"
+                    android:layout_height="200dp"
+                    android:src = "@drawable/sosizi_list1"/>
+            </LinearLayout>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span = "20"
+                        android:layout_gravity="center"
+                        android:text="카테고리"
+                        android:textSize="30dp" />
+                </TableRow>
+
+
+                <TableRow>
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="137dp"
+                        android:src="@drawable/ball"
+                        android:onClick="goToBallList"/>
+
+                    <ImageView
+                        android:onClick="goToRawList"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/sang" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:text="볼닭가슴살"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:text="생닭가슴살"
+                        android:textSize="20dp" />
+                </TableRow>
+
+                <TableRow>
+                    <ImageButton
+                        android:layout_height = "200dp"
+                        android:layout_width="200dp"
+                        android:src = "@drawable/sosizi"
+                        android:onClick = "goToSosiziList"/>
+
+                    <ImageView
+                        android:onClick="goToSteamList"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/subide" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:text="소시지닭가슴살"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:text="스팀닭가슴살"
+                        android:textSize="20dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <ImageView
+                        android:onClick="goToYukpoList"
+                        android:layout_width="159dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/yukpo" />
+
+                    <ImageView
+                        android:onClick="goToStakeList"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/stake" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:text="육포닭가슴살"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:text="스테이크닭가슴살"
+                        android:textSize="20dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <ImageView
+                        android:onClick="goTohunjeList"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/hunje" />
+
+                    <ImageView
+                        android:onClick="goToSliceList"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/slice" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_gravity="center"
+                        android:text="훈제닭가슴살"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:layout_gravity="center"
+                        android:text="슬라이스닭가슴살"
+                        android:textSize="20dp" />
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReviewWrite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="후기 작성"
+            android:textSize="30dp"
+            android:background="#FF8200"
+            android:textColor="#F4FFFF"
+            android:textAlignment="center"/>
+        <TextView
+            android:onClick = "reviewEnd"
+            android:layout_gravity="right"
+            android:layout_marginBottom="21dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "작성완료"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id = "@+id/review_img"
+                android:layout_margin="21dp"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src = "@drawable/sosizi_list1"/>
+            <TextView
+                android:id = "@+id/review_name"
+                android:layout_margin="21dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text = "(맛있닭)직화구이향의 소시지 닭가슴살"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text = "제목 : "/>
+            <EditText
+                android:id = "@+id/review_title"
+                android:text = ""
+                android:layout_width="300dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <EditText
+            android:id = "@+id/review_contents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text = ""
+            android:hint = "내용을 입력하세요"/>
+
+
+    </LinearLayout>
+</LinearLayout>
